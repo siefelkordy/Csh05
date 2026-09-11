@@ -128,6 +128,19 @@
             //C#Basics-05 3rd answer
             PrintBookInfo(pages : 500, title :"Clean Code");
             #endregion
+
+            #region
+            //C#Basics-05 4th answer
+            void PrintAllTitles(params string[] titles)
+            {
+                for (int i = 0; i < titles.Length; i++)
+                {
+                    Console.WriteLine(titles[i]);
+                }
+            }
+            PrintAllTitles("Title1", "Title2", "Title3");
+
+            #endregion
         }
     }
 }
