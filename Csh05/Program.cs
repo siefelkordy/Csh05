@@ -112,6 +112,17 @@
             Console.WriteLine(TryGetPrice("Clean Code", out double price));
             Console.WriteLine(price);
             #endregion
+
+            #region
+            //C#Basics-05 2nd answer
+            void PrintBookInfo(string title, int pages = 300)
+            {
+                Console.WriteLine($"Book title: {title}, Pages: {pages}");
+            }
+            PrintBookInfo("Clean Code");
+            PrintBookInfo("Clean Code",200);
+
+            #endregion
         }
     }
 }
