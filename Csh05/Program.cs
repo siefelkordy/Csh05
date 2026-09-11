@@ -21,6 +21,14 @@
             Console.WriteLine(shelfcopies[1, 0]);
             #endregion
 
+            #region
+            //3rd answer
+            static void PrintWelcomeMessage()
+            {
+                Console.WriteLine("Welcome to the Library!");
+            }
+            PrintWelcomeMessage();
+            #endregion
         }
     }
 }
