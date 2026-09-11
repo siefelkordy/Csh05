@@ -74,6 +74,24 @@
             Console.WriteLine(pages);
 
             #endregion
+
+            #region
+            //8th answer
+            void ReplaceArray(ref double[] prices)
+            {
+                prices[0] = 10.0;
+                prices[1] = 12.5;
+                prices[2] = 15.0;
+
+            }
+            ReplaceArray(ref prices);
+            for(int i = 0; i < prices.Length; i++)
+            {
+                Console.WriteLine(prices[i]);
+            };
+
+
+            #endregion 
         }
     }
 }
