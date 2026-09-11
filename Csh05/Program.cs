@@ -39,6 +39,18 @@
             PrintBook("Clean Code");
 
             #endregion
+
+            #region 
+            //5th answer
+            // I expect the value to be 400 as this is passing by value - value type . That doesn't change the value of the variable outside the method.
+            int pages = 400;
+            void AddPages(int pages)
+            {
+                pages += 50;
+            }
+            AddPages(pages);
+            Console.WriteLine(pages);
+            #endregion
         }
     }
 }
