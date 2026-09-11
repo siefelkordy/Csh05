@@ -62,6 +62,18 @@
             ApplyDiscount(prices);
             Console.WriteLine(prices[0]);
             #endregion
+
+            #region
+            //7th answer
+            // I expect here the value to be changed as this is passing value by reference type. This will change the value of the variable outside the method.
+            void AddBonusPagesByRef(ref int pages)
+            {
+                pages += 50;
+            }
+            AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+
+            #endregion
         }
     }
 }
