@@ -29,6 +29,16 @@
             }
             PrintWelcomeMessage();
             #endregion
+
+            #region
+            //4th answer
+            void PrintBook(string title)
+            {
+                Console.WriteLine(title);
+            }
+            PrintBook("Clean Code");
+
+            #endregion
         }
     }
 }
