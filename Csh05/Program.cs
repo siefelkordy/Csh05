@@ -91,7 +91,27 @@
             };
 
 
-            #endregion 
+            #endregion
+
+            #region
+            //C#Basics-05 1st answer
+            bool TryGetPrice(string title, out double price)
+            {
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+                else
+                {
+                    price = 0;
+                    return false;
+
+                }
+            }
+            Console.WriteLine(TryGetPrice("Clean Code", out double price));
+            Console.WriteLine(price);
+            #endregion
         }
     }
 }
