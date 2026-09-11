@@ -4,20 +4,26 @@ namespace Csh05
 {
     #region
     //C#Basics-05 (Access Modifiers) 1st answer
-    //internal Class Book
-    //{ 
-    //private string password = "secret";
-    //}
+    internal class Book
+    {
+        private string password = "secret";
+        internal int copiesInStock = 5;
+    }
+
+
+
+
+
 
 
 
 
     #endregion
 
-    
+
     internal class Program
     {
- 
+
         static void Main(string[] args)
         {
             //C#Basics-04 Assignment 
@@ -101,10 +107,11 @@ namespace Csh05
 
             }
             ReplaceArray(ref prices);
-            for(int i = 0; i < prices.Length; i++)
+            for (int i = 0; i < prices.Length; i++)
             {
                 Console.WriteLine(prices[i]);
-            };
+            }
+            ;
 
 
             #endregion
@@ -136,13 +143,13 @@ namespace Csh05
                 Console.WriteLine($"Book title: {title}, Pages: {pages}");
             }
             PrintBookInfo("Clean Code");
-            PrintBookInfo("Clean Code",200);
+            PrintBookInfo("Clean Code", 200);
 
             #endregion
 
             #region
             //C#Basics-05 3rd answer
-            PrintBookInfo(pages : 500, title :"Clean Code");
+            PrintBookInfo(pages: 500, title: "Clean Code");
             #endregion
 
             #region
@@ -156,11 +163,16 @@ namespace Csh05
             }
             PrintAllTitles("Title1", "Title2", "Title3");
 
-        #endregion
+            #endregion
 
-        //C#Basics-05 (Access Modifiers) 1st answer calling
-       // Console.WriteLine(Book.password);
+            //C#Basics-05 (Access Modifiers) 1st answer calling
+            Book b = new Book();
+            //Console.WriteLine(b.password); It doesnt compile as password is private and cant be accessed in another class
+            //C#Basics-05 (Access Modifiers) 2nd answer calling
+            Console.WriteLine(b.copiesInStock);//It compiles as copiesInStock is internal and can be accessed in any other class in the same folder
+
+
+        }
+
     }
-
-}
 }
