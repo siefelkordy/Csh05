@@ -15,6 +15,11 @@
 
             #endregion
 
+            #region
+            //2nd answer
+            int[,] shelfcopies = { { 3, 5 }, { 1, 4 } };
+            Console.WriteLine(shelfcopies[1, 0]);
+            #endregion
 
         }
     }
