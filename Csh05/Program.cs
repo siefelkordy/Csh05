@@ -51,6 +51,17 @@
             AddPages(pages);
             Console.WriteLine(pages);
             #endregion
+
+            #region
+            //6th answer
+            // I expect the value to be 20.5 and to be modified as this passing by value - reference type. That changes the value of the variable outside the method.
+            void ApplyDiscount(double[] prices)
+            {
+                prices[0] -= 5;
+            }
+            ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
+            #endregion
         }
     }
 }
