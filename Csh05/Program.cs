@@ -1,7 +1,23 @@
-﻿namespace Csh05
+﻿using System.Runtime.InteropServices;
+
+namespace Csh05
 {
+    #region
+    //C#Basics-05 (Access Modifiers) 1st answer
+    //internal Class Book
+    //{ 
+    //private string password = "secret";
+    //}
+
+
+
+
+    #endregion
+
+    
     internal class Program
     {
+ 
         static void Main(string[] args)
         {
             //C#Basics-04 Assignment 
@@ -140,7 +156,11 @@
             }
             PrintAllTitles("Title1", "Title2", "Title3");
 
-            #endregion
-        }
+        #endregion
+
+        //C#Basics-05 (Access Modifiers) 1st answer calling
+       // Console.WriteLine(Book.password);
     }
+
+}
 }
