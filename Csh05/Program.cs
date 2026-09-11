@@ -8,6 +8,7 @@ namespace Csh05
     {
         private string password = "secret";
         internal int copiesInStock = 5;
+        public string Title;
     }
 
 
@@ -170,7 +171,9 @@ namespace Csh05
             //Console.WriteLine(b.password); It doesnt compile as password is private and cant be accessed in another class
             //C#Basics-05 (Access Modifiers) 2nd answer calling
             Console.WriteLine(b.copiesInStock);//It compiles as copiesInStock is internal and can be accessed in any other class in the same folder
-
+            //C#Basics-05 (Access Modifiers) 3rd answer calling
+            b.Title = "Salma";
+            Console.WriteLine(b.Title);
 
         }
 
