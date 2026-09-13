@@ -9,16 +9,13 @@ namespace Csh05
         private string password = "secret";
         internal int copiesInStock = 5;
         public string Title;
+        public enum Genre
+        {
+            Fiction,
+            NonFiction,
+            Science
+        };
     }
-
-
-
-
-
-
-
-
-
     #endregion
 
 
@@ -166,6 +163,7 @@ namespace Csh05
 
             #endregion
 
+            #region
             //C#Basics-05 (Access Modifiers) 1st answer calling
             Book b = new Book();
             //Console.WriteLine(b.password); It doesnt compile as password is private and cant be accessed in another class
@@ -174,6 +172,15 @@ namespace Csh05
             //C#Basics-05 (Access Modifiers) 3rd answer calling
             b.Title = "Salma";
             Console.WriteLine(b.Title);
+            #endregion
+            //C#Basics-05 (Access Modifiers) 4th answer 
+            Book.Genre genre = Book.Genre.Science;
+            Console.WriteLine(Enum.TryParse(genre.ToString(),true, out Book.Genre parsedGenre));
+            Console.WriteLine(parsedGenre);
+
+
+
+
 
         }
 
