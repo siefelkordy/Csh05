@@ -177,6 +177,11 @@ namespace Csh05
             Book.Genre genre = Book.Genre.Science;
             Console.WriteLine(Enum.TryParse(genre.ToString(),true, out Book.Genre parsedGenre));
             Console.WriteLine(parsedGenre);
+            //C#Basics-05 (Access Modifiers) 5th answer
+            Console.WriteLine((int)Book.Genre.Fiction);
+            Console.WriteLine((int)Book.Genre.NonFiction);
+            Console.WriteLine((int)Book.Genre.Science);
+
 
 
 
