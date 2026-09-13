@@ -181,6 +181,10 @@ namespace Csh05
             Console.WriteLine((int)Book.Genre.Fiction);
             Console.WriteLine((int)Book.Genre.NonFiction);
             Console.WriteLine((int)Book.Genre.Science);
+            //C#Basics-05 (Access Modifiers) 6th answer
+            int genreNumber = 1;
+            Console.WriteLine((Book.Genre)genreNumber);
+
 
 
 
