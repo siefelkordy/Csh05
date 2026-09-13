@@ -184,6 +184,11 @@ namespace Csh05
             //C#Basics-05 (Access Modifiers) 6th answer
             int genreNumber = 1;
             Console.WriteLine((Book.Genre)genreNumber);
+            //C#Basics-05 (Access Modifiers) 7th answer
+            string genreText = "Science";
+            Console.WriteLine(Enum.Parse(typeof(Book.Genre), genreText, true));
+
+
 
 
 
